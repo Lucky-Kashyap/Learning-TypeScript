@@ -3,11 +3,20 @@
 
 console.log('TypeScript');
 
-let num =10;
+// let num =10;
 
 
-num = 'Hello';
+// num = 'Hello';
 
 
-console.log(num);
+// console.log(num);
+
+
+
+
+let firstName:string = 'Lucky';
+
+
+console.log(firstName);
+
 

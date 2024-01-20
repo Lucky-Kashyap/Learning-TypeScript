@@ -29,3 +29,25 @@
         tsc index.ts
 
 - It will convert .ts file to .js file
+
+- TypeScript is all about static Typing
+
+          let num =10;
+
+          num = 'Hello';  // It will error
+
+          // index.ts:9:1 - error TS2322: Type 'string' is not assignable to type 'number'.
+
+          // num = 'Hello';
+
+- We have to define type of variables
+
+        let firstName:string = 'Lucky';
+
+        console.log(firstName);
+
+- For running file, we have to first compile .ts file & run .js file via node command
+
+      tsc index.ts
+
+      node index.js

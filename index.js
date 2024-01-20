@@ -1,5 +1,7 @@
 // Learning TypeScript
 console.log('TypeScript');
-var num = 10;
-num = 'Hello';
-console.log(num);
+// let num =10;
+// num = 'Hello';
+// console.log(num);
+var firstName = 'Lucky';
+console.log(firstName);
