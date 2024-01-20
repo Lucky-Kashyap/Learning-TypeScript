@@ -51,3 +51,74 @@
       tsc index.ts
 
       node index.js
+
+#### write a program to add two numbers?
+
+- Using normal variables
+
+      let num1 = 10;
+      let num2 = 20;
+
+      console.log(num1 + num2);
+
+- Using function
+
+      function sum(a,b){
+        return a+b;
+      }
+
+      console.log(sum(12,15));
+
+- If we run this code it works correct
+
+      node index.ts
+
+      // It shows 27
+
+- If we pass
+
+      sum(10,'Hello');
+
+      // then it returns 10Hello
+
+      // this is not correct
+
+- So we need to define its type
+
+      function sum(a:number,b:number):number{
+        return a+b;
+      }
+
+      sum(10,20);
+      sum(10,'Hi');  // It shows error
+
+      // Argument of type 'string' is not assignable to parameter of type 'number'.
+
+#### How to catch Errors & solve it?
+
+- Duplicate function sum
+
+      //@ts-ignore
+      function sum(a:number,b:number):number{
+        return a+b;
+      }
+
+      console.log(sum(12,19));
+
+      console.log(sum(12,17));
+
+#### TS Configuration File
+
+- When there is error in ts file then not generate .js file
+
+- for generating config file
+
+      tsc --init
+
+- Disable emitting files if any type checking errors are reported
+
+      "noEmitOnError":true
+
+- This command not generate .js file if erorr occur in ts file
+
+      tsc --noEmitOnError index.ts
