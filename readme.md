@@ -122,3 +122,9 @@
 - This command not generate .js file if erorr occur in ts file
 
       tsc --noEmitOnError index.ts
+
+- convert function into fat Arrow Function
+
+      const sum=(a:number,b:number):number=>{
+        return a+b;
+      }
